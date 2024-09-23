@@ -50,6 +50,9 @@ describe( 'Hello World worker', () => {
 		// 		getNum: vi.fn().mockReturnValue( 20 )
 		// 	}
 		// } )
+
+		
+		// this returns 'undefined' when the test reruns
 		vi.mocked( Thing ).prototype.getNum = vi.fn().mockReturnValue( 20 )
 
 
